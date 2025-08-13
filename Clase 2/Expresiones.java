@@ -2,10 +2,9 @@ public class Expresiones {
 
     public static void main (String[] args){
 
-        int a = 5;
-        int b = 6;
-        int c = 0;
-        int x = 7;
+      int A = 4;
+        int B = 5;
+        int C = 1;
 
         
         c = a + b + x;
