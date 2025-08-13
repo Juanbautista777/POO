@@ -8,6 +8,7 @@ public class Expresiones {
 
         double a = B * A - Math.pow(B, 2) / 4 * C;
         
+        double b = (A * B) / Math.pow(3, 2);
        
         System.out.println("a) " + a);
 
