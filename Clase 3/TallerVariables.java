@@ -208,11 +208,20 @@ System.out.println("CO2TOTAL:) " + co2total);
 
 System.out.println("CO2XKM) " + co2xKm);
 
+System.out.println("********* 6) Conversiones y normalización:  ********* ");
+
+double Vmsprom = VPROM * (1000 / 3600);
+
+double galtotal = (l1 + l2 + l3) * galporlitro;
+
+double VNORM = (VPROM - vmin) / (vmax - vmin);
 
 
+System.out.println("VMSPROM:) " + Vmsprom);
 
+System.out.println("GALTOTAL) " + galtotal);
 
-
+System.out.println("VNORM:) " + VNORM);
 
 }
 
