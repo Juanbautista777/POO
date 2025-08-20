@@ -263,6 +263,17 @@ System.out.println("KMLMODELO:) " + kmlModelo);
 
 System.out.println("LITROSMODELO:) " + LitrosModelo);
 
+System.out.println("********* 10)    Índice de eficiencia (score):  ********* ");
+
+double w1 + w2 + w3 + w4 = 1 ;
+
+double score = w1 * 1 / CostoxKm + w2 * kmltotal + w3 * 1 / co2xKm + w4 * 1 / (1 +  O);
+
+
+
+
+
+
 
 
 }
