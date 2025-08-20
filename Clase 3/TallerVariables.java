@@ -129,9 +129,15 @@ System.out.println("\"2) Velocidades y rendimiento ");
 
 double V1 = d1 / t1 ;
 
+double V2 = d2 / t2 ; 
 
+double V3 = d3 / t3 ; 
 
 System.out.println("V1:) " + V1);
+
+System.out.println("V2:) " + V2);
+
+System.out.println("V3:) " + V3);
 
 }
 
