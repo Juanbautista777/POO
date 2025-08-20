@@ -198,6 +198,16 @@ System.out.println("Densidad) " + DENSIDAD);
 
 System.out.println("Ocupacion) " + OCUPACION);
 
+System.out.println("********* 5) EMISIONES DE CO2:  ********* ");
+
+double co2total = (l1 + l2 + l3) * fco2;
+
+double co2xKm = co2total / (d1 + d2 + d3);
+
+System.out.println("CO2TOTAL:) " + co2total);
+
+System.out.println("CO2XKM) " + co2xKm);
+
 
 
 
