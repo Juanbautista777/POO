@@ -151,7 +151,7 @@ System.out.println("V3:) " + V3);
 
 System.out.println("VProm:) " + VPROM);
 
-System.out.println("*********B) Rendimiento por tramo y total*********");
+System.out.println("*********  B) Rendimiento por tramo y total*********");
 
 System.out.println("kml1:) " + kml1);
 
@@ -183,6 +183,25 @@ System.out.println("peajes:) " + peajes);
 System.out.println("CostoDirecto:) " + CostoDirecto); 
 
 System.out.println("CostoPorKm:) " + CostoxKm); 
+
+System.out.println("********* 4) VOLOUMEN DENSIDAD Y OCUPACION:  ********* ");
+
+double VOLOUMENM3 = largo * ancho * alto ;
+
+double DENSIDAD = masaCargaKg / VOLOUMENM3 ;
+
+double OCUPACION = VOLOUMENM3 / volCamionm3 ; 
+
+System.out.println("VolumenM3:) " + VOLOUMENM3);
+
+System.out.println("Densidad) " + DENSIDAD);
+
+System.out.println("Ocupacion) " + OCUPACION);
+
+
+
+
+
 
 
 }
