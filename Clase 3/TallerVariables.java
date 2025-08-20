@@ -62,6 +62,8 @@ double b = 0.08;
 
 double c = 4.0;
 
+System.out.println("\"********* CASO A: *********");
+
 
 System.out.println("\"********* 1) Datos base del viaje declarados:  *********");
 
@@ -222,6 +224,20 @@ System.out.println("VMSPROM:) " + Vmsprom);
 System.out.println("GALTOTAL) " + galtotal);
 
 System.out.println("VNORM:) " + VNORM);
+
+System.out.println("********* 7) Promedios y dispersión:  ********* ");
+
+double VMEDIA = (V1 + V2 + V3) / 3 ;
+
+double O = Math.sqrt((Math.pow(V1 - VMEDIA, 2) + Math.pow(V2 - VMEDIA, 2) + Math.pow(V3 - VMEDIA, 2)) / 3);
+
+double VPOUNDT = (t1 * V1 + t2 * V2 + t3 * V3)/(t1 + t2 + t3);
+
+System.out.println("********* 8)  Interpolación lineal (mantenimiento):  ********* ");
+
+
+
+
 
 }
 
