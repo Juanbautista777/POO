@@ -63,7 +63,7 @@ double b = 0.08;
 double c = 4.0;
 
 
-System.out.println("\"1) Datos base de el viaje declarados: ");
+System.out.println("\"********* 1) Datos base del viaje declarados:  *********");
 
 System.out.println("d1:" + d1 );
 
@@ -125,7 +125,7 @@ System.out.println("b:" + b );
 
 System.out.println("c:" + c );
 
-System.out.println("\"2) Velocidades y rendimiento ");
+System.out.println("\"********* 2) Velocidades y rendimiento*********");
 
 double V1 = d1 / t1 ;
 
@@ -133,11 +133,57 @@ double V2 = d2 / t2 ;
 
 double V3 = d3 / t3 ; 
 
+double VPROM =  (d1 * V1 + d2 * V2 + d3 * V3) / (d1 + d2 + d3) ;
+
+double kml1 = d1 / l1;
+
+double kml2 = d2 / l2;
+
+double kml3 = d3 / l3;
+
+double kmltotal= (d1 + d2 + d3) /  ( l1 + l2 + l3 ) ;
+
 System.out.println("V1:) " + V1);
 
 System.out.println("V2:) " + V2);
 
 System.out.println("V3:) " + V3);
+
+System.out.println("VProm:) " + VPROM);
+
+System.out.println("*********B) Rendimiento por tramo y total*********");
+
+System.out.println("kml1:) " + kml1);
+
+System.out.println("kml2:) " + kml2);
+
+System.out.println("kml3:) " + kml3);
+
+System.out.println("kmltotal:) " + kmltotal); 
+
+
+System.out.println("********* 3) Costos directos:  ********* ");
+
+double CostoComb = (l1 + l2 + l3) * preciolitro ;
+
+double deprec = (d1 + d2 + d3) * deprecporKm ;
+
+double peajes = p1 + p2 + p3 ;
+
+double CostoDirecto = CostoComb + deprec + peajes;
+
+double CostoxKm = CostoDirecto / (d1 + d2 + d3);
+
+System.out.println("CostoComb:) " + CostoComb);
+
+System.out.println("deprec:) " + deprec);
+
+System.out.println("peajes:) " + peajes);
+
+System.out.println("CostoDirecto:) " + CostoDirecto); 
+
+System.out.println("CostoPorKm:) " + CostoxKm); 
+
 
 }
 
