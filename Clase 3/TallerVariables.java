@@ -249,7 +249,19 @@ System.out.println("CVPROM:) " + CVPROM);
 
 System.out.println("COSTO MANT:) " + CostoMant);
 
+System.out.println("********* 9)   Modelo polinómico de rendimiento:  ********* ");
 
+double kmlv = av2 ;// de donde rayos sale? 
+
+double kmlModelo = kml(VPROM) ; //TAMPOCO SE DE DONDE SALE? 
+
+double LitrosModelo = (d1+ d2+ d3) / kmlModelo ; 
+
+System.out.println("KMLV:) " + kmlv);
+
+System.out.println("KMLMODELO:) " + kmlModelo);
+
+System.out.println("LITROSMODELO:) " + LitrosModelo);
 
 
 
