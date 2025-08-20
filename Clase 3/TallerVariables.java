@@ -233,7 +233,21 @@ double O = Math.sqrt((Math.pow(V1 - VMEDIA, 2) + Math.pow(V2 - VMEDIA, 2) + Math
 
 double VPOUNDT = (t1 * V1 + t2 * V2 + t3 * V3)/(t1 + t2 + t3);
 
+System.out.println("VMEDIA:) " + VMEDIA);
+
+System.out.println("O:) " + O);
+
+System.out.println("VPOUNDT:) " + VPOUNDT);
+
 System.out.println("********* 8)  Interpolación lineal (mantenimiento):  ********* ");
+
+double CVPROM = ca + (cb - ca) * (VPROM - va) / (vb - va) ; 
+
+double CostoMant = CVPROM * ( d1 + d2 + d3);
+
+System.out.println("CVPROM:) " + CVPROM);
+
+System.out.println("COSTO MANT:) " + CostoMant);
 
 
 
