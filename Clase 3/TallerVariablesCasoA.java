@@ -1,4 +1,4 @@
-public class TallerVariables {
+public class TallerVariablesCasoA {
 
     public static void main (String[] args){
 
