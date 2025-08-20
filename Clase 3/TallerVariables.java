@@ -124,6 +124,15 @@ System.out.println("a:" + a );
 System.out.println("b:" + b );
 
 System.out.println("c:" + c );
+
+System.out.println("\"2) Velocidades y rendimiento ");
+
+double V1 = d1 / t1 ;
+
+
+
+System.out.println("V1:) " + V1);
+
 }
 
 }
