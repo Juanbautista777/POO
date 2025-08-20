@@ -83,8 +83,6 @@ System.out.println("l2:" + l2 );
 
 System.out.println("l3:" + l3 );
 
-System.out.println("d1:" + d1 );
-
 System.out.println("precioxlitro:" + preciolitro );
 
 System.out.println("masaCargaKg:" + masaCargaKg );
@@ -107,7 +105,7 @@ System.out.println("volcamionm3:" + volCamionm3 );
 
 System.out.println("fco2:" + fco2 );
 
-System.out.println("galon x litro :" + galporlitro );
+System.out.println("galporlitro :" + galporlitro );
 
 System.out.println("Velocidad minima:" + vmin );
 
