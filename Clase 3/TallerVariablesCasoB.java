@@ -2,45 +2,45 @@ public class TallerVariablesCasoB {
 
     public static void main (String[] args){
 
-double d1 = 42.0;
+double d1 = 35.0;
 
-double d2 = 58.5;
+double d2 = 72.0;
 
-double d3 = 37.2;
+double d3 = 53.0;
 
-double t1= 0.9;
+double t1= 0.7;
 
-double t2= 1.4;
+double t2= 1.6;
 
-double t3= 0.8;
+double t3= 1.1;
 
-double l1= 5.1;
+double l1= 4.4;
 
-double l2= 6.9;
+double l2= 9.0;
 
-double l3= 4.3;
+double l3= 6.2;
 
-double preciolitro = 1.35;
+double preciolitro = 1.42;
 
-double masaCargaKg = 1200;
+double masaCargaKg = 1450;
 
-double largo = 2.0;
+double largo = 2.2;
 
-double ancho = 1.2;
+double ancho = 1.3;
 
-double alto= 1.1;
+double alto= 1.0;
 
-double p1 = 2.5;
+double p1 = 3.2;
 
-double p2 = 3.0;
+double p2 = 3.8;
 
-double p3 = 2.0;
+double p3 = 2.7;
 
-double deprecporKm = 0.08;
+double deprecporKm = 0.085;
 
-double volCamionm3 = 10.0;
+double volCamionm3 = 12.0;
 
-double fco2= 2.68;
+double fco2= 2.64;
 
 double galporlitro = 0.264172;
 
@@ -56,11 +56,11 @@ double ca = 0.05;
 
 double cb = 0.09;
 
-double a = -0.0008;
+double a = -0.0009;
 
-double b = 0.08;
+double b = 0.09;
 
-double c = 4.0;
+double c = 3.8;
 
 System.out.println("\"********* CASO A: *********");
 
