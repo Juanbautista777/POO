@@ -251,9 +251,11 @@ System.out.println("COSTO MANT:) " + CostoMant);
 
 System.out.println("********* 9)   Modelo polinómico de rendimiento:  ********* ");
 
-double kmlv = a * Math.pow(v, 2) ;// de donde rayos sale v ? 
+double v = VPROM ; 
 
-double kmlModelo = kml(VPROM) ; //TAMPOCO SE DE DONDE SALE? 
+double kmlv = a * Math.pow(v, 2) + b * v + c;
+
+double kmlModelo = kmlv ;
 
 double LitrosModelo = (d1+ d2+ d3) / kmlModelo ; 
 
@@ -275,8 +277,7 @@ double w4 = 0.25 ;
 
 double score = w1 * 1 / CostoxKm + w2 * kmltotal + w3 * 1 / co2xKm + w4 * 1 / (1 +  O);
 
-
-
+System.out.println("SCORE:) " + score);
 
 
 
