@@ -251,7 +251,7 @@ System.out.println("COSTO MANT:) " + CostoMant);
 
 System.out.println("********* 9)   Modelo polinómico de rendimiento:  ********* ");
 
-double kmlv = av2 ;// de donde rayos sale? 
+double kmlv = a * Math.pow(v, 2) ;// de donde rayos sale? 
 
 double kmlModelo = kml(VPROM) ; //TAMPOCO SE DE DONDE SALE? 
 
