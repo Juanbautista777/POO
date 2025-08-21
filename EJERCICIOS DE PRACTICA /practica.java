@@ -43,9 +43,27 @@ System.out.println("La Resistencia #2 es de: "+ KO2);
 
 System.out.println("La Corriente del emisor es de: "+ Ie * 1000);
 
+System.out.println("******** EJERCICIO 3: ********");
 
+double x1 = 0.0;
 
+double y1 = 1.1;
 
+double x2 = 4.94;
+
+double y2 = 0.0;
+
+double Pendiente = (y2 - y1)/ (x2- x1);
+
+System.out.println("La Variable Y1 es: " + y1);
+
+System.out.println("La Variable Y2 es: " + y2);
+
+System.out.println("La Variable X1 es: " + x1);
+
+System.out.println("La Variable X2 es: " + x2);
+
+System.out.println("Con los parametros anteriores nos da La Pendiente: "+ Pendiente);
 
 }
 
