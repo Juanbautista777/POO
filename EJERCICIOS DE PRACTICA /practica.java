@@ -65,6 +65,69 @@ System.out.println("La Variable X2 es: " + x2);
 
 System.out.println("Con los parametros anteriores nos da La Pendiente: "+ Pendiente);
 
+System.out.println("******** EJERCICIO 4: ********");
+
+System.out.println("Juan David" + " Bautista Enciso");
+
+System.out.println("******** EJERCICIO 5: ********");
+
+System.out.println("hello"+ " world");
+
+System.err.println("******** EJERCICIO 6: ********");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
