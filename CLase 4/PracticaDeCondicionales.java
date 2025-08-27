@@ -68,7 +68,7 @@ public class PracticaDeCondicionales {
 
          /* ejercicio 4.9  */
         
-         int Angulo = 1;
+         int Angulo = 90;
         if (Angulo < 90) { System.out.println("este es un angulo agudo");
             
         } else { 
