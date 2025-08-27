@@ -7,22 +7,11 @@ public class PracticaDeCondicionales {
        double angulo = 80;
 
         if (angulo == 90) {
-            
-        
-            
-            
-            System.err.println("el angulo no es un angulo recto");
-            
 
-
-
-
-
-
-
-
-        }
-
+        System.out.println("el angulo si es un angulo recto");}
+            else { 
+                System.out.println("el angulo no es un angulo recto ");
+            }
 
 
 
