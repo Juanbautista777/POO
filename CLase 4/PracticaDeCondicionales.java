@@ -1,11 +1,17 @@
 public class PracticaDeCondicionales {
 
     public static void main (String[] args){
-        
-        int A = 100;     
-        
+      
+        /*ejercicio 4.1 A)  */
+       
+       double angulo = 80;
 
-        if (A == 0) { System.err.println("good ending");
+        if (angulo == 90) {
+            
+        
+            
+            
+            System.err.println("el angulo no es un angulo recto");
             
 
 
@@ -14,7 +20,7 @@ public class PracticaDeCondicionales {
 
 
 
-        
+
         }
 
 
