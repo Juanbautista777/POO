@@ -65,5 +65,18 @@ public class PracticaDeCondicionales {
             System.out.println("no es posible calcular el tiempo ");
         }
 
+
+         /* ejercicio 4.9  */
+        
+         int Angulo = 1;
+        if (Angulo < 90) { System.out.println("este es un angulo agudo");
+            
+        } else { 
+            if (Angulo > 90) { System.out.println("este angulo es obtuso ");
+                
+            } else {   System.out.println(" es un angulo recto ");}
+        }
+
+
     }
 }
