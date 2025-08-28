@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class PracticaDeCondicionales {
 
     public static void main(String[] args) {
@@ -65,19 +67,54 @@ public class PracticaDeCondicionales {
             System.out.println("no es posible calcular el tiempo ");
         }
 
+        /* ejercicio 4.9 */
 
-         /* ejercicio 4.9  */
-        
-         int Angulo = 90;
-        if (Angulo < 90) { System.out.println("este es un angulo agudo");
-            
-        } else { 
-            if (Angulo > 90) { System.out.println("este angulo es obtuso ");
-                
-            } else {   System.out.println(" es un angulo recto ");}
+        int Angulo = 90;
+        if (Angulo < 90) {
+            System.out.println("este es un angulo agudo");
+
+        } else {
+            if (Angulo > 90) {
+                System.out.println("este angulo es obtuso ");
+
+            } else {
+                System.out.println(" es un angulo recto ");
+            }
         }
 
+        /* ejercicio 4.2 */
 
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingrese el primer número: ");
+        int num1 = sc.nextInt();
+        System.out.print("Ingrese el segundo número: ");
+        int num2 = sc.nextInt();
+        if (num1 > num2) {
+            System.out.println("El primer número es el más grande");
+        } else if (num1 == num2) {
+            System.out.println("Los dos números son iguales");
+        } else {
+            System.out.println("El primer número es el más pequeño");
+        }
+
+        /* ejercicio 4.3 */
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingrese el primer número: ");
+        int a = sc.nextInt();
+        System.out.print("Ingrese el segundo número: ");
+        int b = sc.nextInt();
+        System.out.print("Ingrese el tercer número: ");
+        int c = sc.nextInt();
+
+        if ((a > b && a < c) || (a < b && a > c)) {
+            System.out.println("El número central es: " + a);
+        } else if ((b > a && b < c) || (b < a && b > c)) {
+            System.out.println("El número central es: " + b);
+        } else {
+            System.out.println("El número central es: " + c);
+        }
     }
+
 }
-/* solucionar ejercicios del 4.1 al 4.12 pagina 155 libro  */
+
+/* solucionar ejercicios del 4.1 al 4.12 pagina 155 libro */
