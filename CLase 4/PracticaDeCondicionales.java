@@ -98,7 +98,7 @@ public class PracticaDeCondicionales {
         }
 
         /* ejercicio 4.3 */
-        Scanner sc = new Scanner(System.in);
+       
         System.out.print("Ingrese el primer número: ");
         int a = sc.nextInt();
         System.out.print("Ingrese el segundo número: ");
@@ -111,7 +111,11 @@ public class PracticaDeCondicionales {
         } else if ((b > a && b < c) || (b < a && b > c)) {
             System.out.println("El número central es: " + b);
         } else {
+      
             System.out.println("El número central es: " + c);
+       
+       
+       
         }
     }
 
