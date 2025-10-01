@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+public class EjecutarOpeMatGrupo2 {
+    public static void main(String[] args) {
+        //Clase Scanner para leer datos por teclado
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite el primer número...");
+        //Con el objeto sc llamamos los metodos de la clase Scanner, por ejemplo: sc.nextInt()
+        int a = sc.nextInt();
+        System.out.print("Digite el segundo número...");
+        int b = sc.nextInt();
+
+         OperacionesMatematicas objOp = new OperacionesMatematicas(a,b);
+
+      
+        int opcion;
+        
+        do {
+           
+            System.out.println("\n--- MENÚ DE OPERACIONES ---");
+            System.out.println("1. Elevar al cuadrado");
+            System.out.println("2. Elevar al cubo");
+            System.out.println("3. Elevar a la n");
+            System.out.println("4. Raíz cuadrada");
+            System.out.println("5. Raíz cúbica");
+            System.out.println("6. Raíz n");
+            System.out.println("7. Salir");
+            System.out.print("Elige una opción: ");
+            
+            opcion = sc.nextInt();
+            
+            if (opcion >= 1 && opcion <= 6) {
+                System.out.print("Ingresa el número: ");
+                double numero = sc.nextDouble();
+                double resultado = 0;
+                
+                switch (opcion) {
+                    case 1:
+                        resultado = elevarCuadrado(numero);
+                        break;
+                    case 2:
+                        resultado = elevarCubo(numero);
+                        break;
+                    case 3:
+                        System.out.print("Ingresa el exponente n: ");
+                        int n = sc.nextInt();
+                        resultado = elevarN(numero, n);
+                        break;
+                    case 4:
+                        resultado = raizCuadrada(numero);
+                        break;
+                    case 5:
+                        resultado = raizCubica(numero);
+                        break;
+                    case 6:
+                        System.out.print("Ingresa el valor de n: ");
+                        int raizN = sc.nextInt();
+                        resultado = raizN(numero, raizN);
+                        break;
+                }
+                
+                System.out.println("Resultado: " + resultado);
+            }
+            
+        } while (opcion != 7);
+        
+        System.out.println("¡Programa terminado!");
+        sc.close();
+    }
+}

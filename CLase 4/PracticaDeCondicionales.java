@@ -116,9 +116,9 @@ public class PracticaDeCondicionales {
        
        
        
-        }
+    sc.close();
+}    }
     }
 
-}
-
+ 
 /* solucionar ejercicios del 4.1 al 4.12 pagina 155 libro */
