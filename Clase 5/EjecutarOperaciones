@@ -2,69 +2,75 @@ import java.util.Scanner;
 
 public class EjecutarOpeMatGrupo2 {
     public static void main(String[] args) {
-        //Clase Scanner para leer datos por teclado
         Scanner sc = new Scanner(System.in);
-
-        System.out.print("Digite el primer número...");
-        //Con el objeto sc llamamos los metodos de la clase Scanner, por ejemplo: sc.nextInt()
-        int a = sc.nextInt();
-        System.out.print("Digite el segundo número...");
-        int b = sc.nextInt();
-
-         OperacionesMatematicas objOp = new OperacionesMatematicas(a,b);
-
-      
         int opcion;
-        
+
         do {
-           
             System.out.println("\n--- MENÚ DE OPERACIONES ---");
-            System.out.println("1. Elevar al cuadrado");
-            System.out.println("2. Elevar al cubo");
-            System.out.println("3. Elevar a la n");
-            System.out.println("4. Raíz cuadrada");
-            System.out.println("5. Raíz cúbica");
-            System.out.println("6. Raíz n");
-            System.out.println("7. Salir");
+            System.out.println("1. Sumar");
+            System.out.println("2. Restar");
+            System.out.println("3. Multiplicar");
+            System.out.println("4. Dividir");
+            System.out.println("5. Elevar al cuadrado");
+            System.out.println("6. Elevar al cubo");
+            System.out.println("7. Elevar a la n");
+            System.out.println("8. Raíz cuadrada");
+            System.out.println("9. Raíz cúbica");
+            System.out.println("10. Raíz n");
+            System.out.println("11. Salir");
             System.out.print("Elige una opción: ");
-            
+
             opcion = sc.nextInt();
-            
-            if (opcion >= 1 && opcion <= 6) {
-                System.out.print("Ingresa el número: ");
-                double numero = sc.nextDouble();
-                double resultado = 0;
-                
+            double resultado = 0;
+
+            if (opcion >= 1 && opcion <= 4) {
+                // operaciones con dos números enteros
+                System.out.print("Ingresa el primer número: ");
+                int a = sc.nextInt();
+                System.out.print("Ingresa el segundo número: ");
+                int b = sc.nextInt();
+
+                OperacionesMatematicas obj = new OperacionesMatematicas(a, b);
+
                 switch (opcion) {
-                    case 1:
-                        resultado = elevarCuadrado(numero);
-                        break;
-                    case 2:
-                        resultado = elevarCubo(numero);
-                        break;
-                    case 3:
-                        System.out.print("Ingresa el exponente n: ");
-                        int n = sc.nextInt();
-                        resultado = elevarN(numero, n);
-                        break;
-                    case 4:
-                        resultado = raizCuadrada(numero);
-                        break;
-                    case 5:
-                        resultado = raizCubica(numero);
-                        break;
-                    case 6:
-                        System.out.print("Ingresa el valor de n: ");
-                        int raizN = sc.nextInt();
-                        resultado = raizN(numero, raizN);
+                    case 1: resultado = obj.sumar(); break;
+                    case 2: resultado = obj.restar(); break;
+                    case 3: resultado = obj.multiplicar(); break;
+                    case 4: 
+                        if (b != 0) resultado = obj.dividir(); 
+                        else System.out.println("No se puede dividir entre cero");
                         break;
                 }
-                
+
+            } else if (opcion >= 5 && opcion <= 10) {
+                // operaciones con un solo número
+                System.out.print("Ingresa el número: ");
+                double numero = sc.nextDouble();
+
+                switch (opcion) {
+                    case 5: resultado = OperacionesMatematicas.elevarCuadrado(numero); break;
+                    case 6: resultado = OperacionesMatematicas.elevarCubo(numero); break;
+                    case 7: 
+                        System.out.print("Ingresa el exponente n: ");
+                        int n = sc.nextInt();
+                        resultado = OperacionesMatematicas.elevarN(numero, n);
+                        break;
+                    case 8: resultado = OperacionesMatematicas.raizCuadrada(numero); break;
+                    case 9: resultado = OperacionesMatematicas.raizCubica(numero); break;
+                    case 10: 
+                        System.out.print("Ingresa el valor de n: ");
+                        int raizN = sc.nextInt();
+                        resultado = OperacionesMatematicas.raizN(numero, raizN);
+                        break;
+                }
+            }
+
+            if (opcion >= 1 && opcion <= 10) {
                 System.out.println("Resultado: " + resultado);
             }
-            
-        } while (opcion != 7);
-        
+
+        } while (opcion != 11);
+
         System.out.println("¡Programa terminado!");
         sc.close();
     }
