@@ -4,7 +4,7 @@ public class Producto {
     private String nombre;
     private double precioUnitario;
     private int cantidad;
-    private double descuento; // porcentaje de descuento (0 a 100)
+    private double descuento; 
 
     //  Constructor por defecto 
     public Producto() {
@@ -39,7 +39,7 @@ public class Producto {
         return descuento;
     }
 
-    // Setters (para modificar valores con validación)
+    //  Setters (para modificar valores con validación)
     public void setNombre(String nombre) {
         if (nombre == null || nombre.trim().isEmpty()) {
             throw new IllegalArgumentException("El nombre no puede estar vacío");
@@ -68,14 +68,15 @@ public class Producto {
         this.descuento = descuento;
     }
 
-    // Método para calcular el total con descuento y con impuesto del 8%
+    //  Método para calcular el total con descuento y con impuesto del 8%
     public double calcularTotal() {
         double subtotal = precioUnitario * cantidad;
         double totalConDescuento = subtotal - (subtotal * descuento / 100);
         double totalConImpuesto = totalConDescuento * 1.08; // se aplica el impuesto del 8%
         return totalConImpuesto;
+    }
 
-    //  Método toString() para mostrar la información del producto
+    // Método toString() para mostrar la información del producto
     @Override
     public String toString() {
         return "Producto: " + nombre +
