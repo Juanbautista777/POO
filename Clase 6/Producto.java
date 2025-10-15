@@ -1,12 +1,12 @@
 public class Producto {
 
-    // 1️⃣ Atributos (siempre privados para mantener la encapsulación)
+    //  Atributos 
     private String nombre;
     private double precioUnitario;
     private int cantidad;
     private double descuento; // porcentaje de descuento (0 a 100)
 
-    // 2️⃣ Constructor por defecto (sin parámetros)
+    //  Constructor por defecto 
     public Producto() {
         this.nombre = "Sin nombre";
         this.precioUnitario = 0.0;
@@ -14,7 +14,7 @@ public class Producto {
         this.descuento = 0.0;
     }
 
-    // 3️⃣ Constructor parametrizado
+    //  Constructor parametrizado
     public Producto(String nombre, double precioUnitario, int cantidad, double descuento) {
         setNombre(nombre);
         setPrecioUnitario(precioUnitario);
@@ -22,7 +22,7 @@ public class Producto {
         setDescuento(descuento);
     }
 
-    // 4️⃣ Getters (para leer valores)
+    // Getters
     public String getNombre() {
         return nombre;
     }
@@ -39,7 +39,7 @@ public class Producto {
         return descuento;
     }
 
-    // 5️⃣ Setters (para modificar valores con validación)
+    // Setters (para modificar valores con validación)
     public void setNombre(String nombre) {
         if (nombre == null || nombre.trim().isEmpty()) {
             throw new IllegalArgumentException("El nombre no puede estar vacío");
@@ -68,15 +68,14 @@ public class Producto {
         this.descuento = descuento;
     }
 
-    // 6️⃣ Método para calcular el total con descuento y con impuesto del 8%
+    // Método para calcular el total con descuento y con impuesto del 8%
     public double calcularTotal() {
         double subtotal = precioUnitario * cantidad;
         double totalConDescuento = subtotal - (subtotal * descuento / 100);
         double totalConImpuesto = totalConDescuento * 1.08; // se aplica el impuesto del 8%
         return totalConImpuesto;
-    }
 
-    // 7️⃣ Método toString() para mostrar la información del producto
+    //  Método toString() para mostrar la información del producto
     @Override
     public String toString() {
         return "Producto: " + nombre +
