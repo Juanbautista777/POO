@@ -1,0 +1,49 @@
+Parte I – Conceptual (10%)
+
+******PREGUNTAS:
+1. ¿Qué es la encapsulación y por qué es importante en la Programación Orientada a Objetos?
+
+2. ¿Qué diferencia hay entre un método y un constructor?
+
+3. ¿Por qué los atributos deben ser privados y no públicos?
+
+4. ¿Qué función cumplen los getters y setters?
+
+5. Verdadero o falso: “Un método setter no debe validar los datos que recibe.” Justifique.
+
+
+******RESPUESTAS:
+1R/ 
+La encapsulación consiste en ocultar los datos de un objeto y restringir el acceso directo a ellos tambien es importante
+ya que esta ayuda a proteger y evitar que los datos de dicho objeto sean modificadas
+
+2R/
+la principal diferencia es que un constructor "crea" el objeto y los metodos "hacen" cosas con el 
+
+3R/
+porque al ser privados solo se pueden modificar mediante metodos getters o setters mientras que si fuera publico cualquier parte del programa podria cambiarlos
+lo que podria proocar errores 
+
+4R/
+la funcion de los metodos getters son "obtener" es decir leer los atributos del objetos
+la funcion de los metodos setters son "asignar" el valor a los atributos de algun objeto 
+
+5R/ esta afirmacion es falsa ya que un metodo setter si debe validar los datos que recibe para asegurarse de que sean correctos para asignarlos de manera correcta 
+por ejemplo si un atributo tiempo se pide en positivo el setter debe impedir que se asigne un valor negativo 
+
+
+PREGUNTAS DE SUSTENTACION CUENTA BANCARIA
+
+Preguntas de sustentación:
+1. ¿Por qué el atributo saldo debe ser privado?
+
+2. ¿Qué ocurriría si se intenta depositar un valor negativo?
+
+3. Modifique en vivo el código para permitir un sobregiro máximo de -50 y explique el cambio.
+
+RESPUESTAS DE SUSTENTACION
+
+1R/ el atributo saldo debe ser privado ya que si es publico cualquier otra clase podria modificarlo haciendo esto que se viole el principio de la encapsulación
+
+2R/ el metodo "depositar" debe tener un validacion que impida que esto se haga y si se intenta hacer un deposito negativo el sistema arrojara un (IllegalArgumentException) o simplemente arrojara un error
+haciendo esto que el usuario pueda "aumentar" negativamente su saldo
