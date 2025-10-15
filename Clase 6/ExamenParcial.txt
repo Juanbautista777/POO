@@ -34,7 +34,6 @@ por ejemplo si un atributo tiempo se pide en positivo el setter debe impedir que
 
 PREGUNTAS DE SUSTENTACION CUENTA BANCARIA
 
-Preguntas de sustentación:
 1. ¿Por qué el atributo saldo debe ser privado?
 
 2. ¿Qué ocurriría si se intenta depositar un valor negativo?
@@ -47,3 +46,16 @@ RESPUESTAS DE SUSTENTACION
 
 2R/ el metodo "depositar" debe tener un validacion que impida que esto se haga y si se intenta hacer un deposito negativo el sistema arrojara un (IllegalArgumentException) o simplemente arrojara un error
 haciendo esto que el usuario pueda "aumentar" negativamente su saldo
+
+PREGUNTAS DE SUSTENTACION PRODUCTO
+
+¿Por qué se valida el porcentaje del descuento?
+
+2. ¿Qué sucede si el precio unitario es negativo?
+
+
+RESPUESTAS DE SUSTENTACION
+1R/ esta validacion protege el total del producto permitiendo asi que el cliente no pague mas o menos del total del producto
+
+2R/ Si el usuario intenta asignar un valor negativo, el sistema rechaza la operación y muestra un mensaje de error
+
