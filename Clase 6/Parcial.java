@@ -9,7 +9,7 @@ public class Parcial {
         System.out.println(cuenta);
 
         // --- Creacion de un producto ---
-        Producto p1 = new Producto("Laptop", 2500.0, 2, 10);
+        Producto1 p1 = new Producto1 ("Laptop", 2500.0, 2, 10);
         System.out.println(p1);
     }
 }

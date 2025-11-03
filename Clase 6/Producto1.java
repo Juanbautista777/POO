@@ -1,4 +1,4 @@
-public class Producto {
+public class Producto1 {
 
     //  Atributos 
     private String nombre;
@@ -7,7 +7,7 @@ public class Producto {
     private double descuento; 
 
     //  Constructor por defecto 
-    public Producto() {
+    public Producto1() {
         this.nombre = "Sin nombre";
         this.precioUnitario = 0.0;
         this.cantidad = 0;
@@ -15,7 +15,7 @@ public class Producto {
     }
 
     //  Constructor parametrizado
-    public Producto(String nombre, double precioUnitario, int cantidad, double descuento) {
+    public Producto1(String nombre, double precioUnitario, int cantidad, double descuento) {
         setNombre(nombre);
         setPrecioUnitario(precioUnitario);
         setCantidad(cantidad);
@@ -79,7 +79,7 @@ public class Producto {
     // Método toString() para mostrar la información del producto
     @Override
     public String toString() {
-        return "Producto: " + nombre +
+        return "Producto1: " + nombre +
                "\nPrecio unitario: $" + precioUnitario +
                "\nCantidad: " + cantidad +
                "\nDescuento: " + descuento + "%" +
