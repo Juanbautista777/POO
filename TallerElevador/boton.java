@@ -2,7 +2,7 @@ public class boton {
 private boolean iluminado;
     private boolean presionado;
 
-    public Boton() {
+    public boton() {
         this.iluminado = false;
         this.presionado = false;
     }
