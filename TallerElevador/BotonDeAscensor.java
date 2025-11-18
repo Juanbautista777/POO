@@ -1,4 +1,4 @@
-public class BotonDeAscensor extends boton {
+public class BotonDeAscensor extends Boton {
     private int pisoDestino;
 
     public BotonDeAscensor(int pisoDestino) {
@@ -6,9 +6,11 @@ public class BotonDeAscensor extends boton {
         this.pisoDestino = pisoDestino;
     }
 
-    public int getPisoDestino() {
-        return pisoDestino;
+    @Override
+    public void presionar() {
+        super.presionar();
+        System.out.println("   Destino interno: Piso " + pisoDestino);
     }
-}
-    
 
+    public int getPisoDestino() { return pisoDestino; }
+}

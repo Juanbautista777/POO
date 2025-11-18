@@ -1,0 +1,3 @@
+public enum EstadoAscensor {
+    DETENIDO, EN_MOVIMIENTO, MANTENIMIENTO, EMERGENCIA
+}
