@@ -1,4 +1,4 @@
-public class boton {
+public class Boton {
 private boolean iluminado;
     private boolean presionado;
 
