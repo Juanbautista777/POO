@@ -1,0 +1,7 @@
+Dentro del problema del elevador, debes de tomar en cuentas varios puntos. El edificio sera de 10 pisos
+(punto importante, en el piso 1 solo abra un boton para subir y en el 10 uno para bajar) lo cual, un pasajero
+presionara el boton, el ascensor deberia reconocer el boton del piso que fue presionado e ir hasta ese piso, 
+una vez llega abre sus puertas para permitir el ingreso del pasajero una vez adentro, el pasajero debera escoger
+un boton al piso que quiera ir, una vez seleccionado se cerraran las puertas y subira o bajara correspondiente al
+boton presionado. Una vez llegue al destino las puertas se abriran y dejaran salir al pasajero. Nota, cada boton 
+precionado debe de alumbrar indicando al pasajero que el boton esta ejecutando una accion.    
